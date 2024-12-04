@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+  
+  .header-logo img {
+    height: 50px;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .header-nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-nav :hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 390px) {
+    .header-logo img {
+      margin-left: 0px !important ;
+    }
+    .header-nav {
+      gap: 0.5em !important;
+      margin-right: 0px !important;
+    }
+    .header {
+      padding: 1em !important;
+    }
+  }
