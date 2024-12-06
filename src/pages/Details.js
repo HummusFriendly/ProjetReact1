@@ -53,7 +53,7 @@ function Details() {
         </ul>
       </div>
       <div className='collapse-container'>
-      <Collapse title={"Description"} contents={[logement.description]}/>
+      <Collapse title={"Description"} contents={logement.description}/>
       <Collapse title={"Equipement"} contents={logement.equipments}/>
       </div>
     </div>

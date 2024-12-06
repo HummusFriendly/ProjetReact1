@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Collapse.css';
-import downIcon from '../assets/down.png';
 import topIcon from '../assets/top.png';
 
 export function Collapse({ title, contents }) {
@@ -16,9 +15,9 @@ export function Collapse({ title, contents }) {
         <p>{title}</p>
         <button onClick={toggleCollapse} className="toggle-button">
           <img
-            src={isOpen ? downIcon : topIcon}
+            src={isOpen ? topIcon : topIcon}
             alt={isOpen ? 'Fermer' : 'Ouvrir'}
-            className="toggle-icon"
+            className={`toggle-icon ${isOpen ? 'rotate' : ''}`}
           />
         </button>
       </div>

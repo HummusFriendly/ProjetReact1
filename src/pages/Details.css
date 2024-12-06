@@ -117,3 +117,20 @@ ul {
   margin-bottom: 30px;
   width: 520px;
 }
+
+@media (max-width: 390px) {
+
+.details-title-host h1 {
+  font-size: 18px;
+}
+.details-tags-stars {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tag {
+  font-size: 10px;
+}
+.details-stars {
+  margin-left: -40px;
+}
+}

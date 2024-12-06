@@ -2,11 +2,12 @@ import React from 'react';
 import AboutImage from '../assets/AboutImage.png';
 import './About.css';
 import { Collapse } from '../components/Collapse';
+import Banner from '../components/Banner';
 
 function About() {
   return (
     <div>
-      <img src={AboutImage} alt="About Banner" className="about-banner" />
+      <Banner picture={AboutImage} />
       <div className="about-container">
         <Collapse className="about-collapse" title="Fiabilité" contents="Les annonces postées sur texte texte texte texte sont texte texte texte." />
         <Collapse className="about-collapse" title="Respect" contents="Les annonces postées sur texte texte texte texte sont texte texte texte." />
